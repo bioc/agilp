@@ -6,5 +6,6 @@ Date: 2012-06-10
 Author: Benny Chain <b.chain@ucl.ac.uk>
 Maintainer: Benny Chain <b.chain@ucl.ac.uk>
 Depends: R (>= 2.14.0)
-Description: More about what it does (maybe more than one line)
+Description: provides a pipeline for the low-level analysis of gene expression
+	microarray data, primarily Agilent data
 License: GPL-3
