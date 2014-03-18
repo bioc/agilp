@@ -1,7 +1,7 @@
 Package: agilp
 Type: Package
 Title: Agilent expression array processing package
-Version: 3.5.2
+Version: 3.5.3
 Date: 2012-06-10
 Author: Benny Chain <b.chain@ucl.ac.uk>
 Maintainer: Benny Chain <b.chain@ucl.ac.uk>

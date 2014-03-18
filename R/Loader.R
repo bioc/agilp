@@ -13,7 +13,7 @@ i<-1
 j<-1
 for (i in 1:n){
  
-name<-paste(input,arrays[j,r], sep="")
+name <- file.path(input, arrays[j,r])
 
 if(file.exists(name)){
 data<-read.table(file = name, row.names=1, header = TRUE, sep = "\t", fill = TRUE,  stringsAsFactors=FALSE)
