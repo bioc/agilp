@@ -38,8 +38,8 @@ Loader(input=file.path(system.file(package="agilp"),"input",""),output=file.path
 \references{In preparation}
 \examples{
 
-inputdir<-file.path(system.file(package="agilp"),"extdata","raw","", fsep = .Platform$file.sep)
-outputdir<-file.path(system.file(package="agilp"),"output", "", fsep = .Platform$file.sep)
+inputdir<-file.path(system.file(package="agilp"),"extdata","raw/","", fsep = .Platform$file.sep)
+outputdir<-file.path(system.file(package="agilp"),"output/", "", fsep = .Platform$file.sep)
 template<-file.path(system.file(package="agilp"),"extdata","sample_template.txt", fsep = .Platform$file.sep)
 
 #This will copy the files with names given in column 2 , rows 2:3 of the sample_#template file from input to output. 

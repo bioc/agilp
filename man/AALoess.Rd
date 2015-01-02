@@ -41,8 +41,8 @@ oligonucleotide expression arrays. BMC Bioinformatics. 2010 Jun 24;11:344.}
 
 \examples{
 #Takes four files of raw data (output of AAProcess, in dataset/raw folder) , LOess normalises them and saves them in output folder
-inputdir<-file.path(system.file(package="agilp"),"extdata","raw","", fsep = .Platform$file.sep)
-outputdir<-file.path(system.file(package="agilp"),"output", "", fsep = .Platform$file.sep)
+inputdir<-file.path(system.file(package="agilp"),"extdata","raw/","", fsep = .Platform$file.sep)
+outputdir<-file.path(system.file(package="agilp"),"output/", "", fsep = .Platform$file.sep)
 baselinedir<-file.path(system.file(package="agilp"),"extdata","testbase.txt", fsep = .Platform$file.sep)
 AALoess(input=inputdir, output=outputdir, baseline = baselinedir, LOG="TRUE") 
 \dontrun{

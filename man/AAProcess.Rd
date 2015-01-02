@@ -7,7 +7,7 @@
 \description{This function takes scanner "txt format" files produced by the Agilent microarray scanner, extracts just the raw median intensity values from the columns marked "gMedianSignal" or "rMedianSignal". Replicate probes  are averaged. The expression data for each colour is written as separate txt tab delimited files with the same name as the original plus prefix rRaw_ or gRaw_. Probe names are in the first column, expression values in the second column. 
 }
 \usage{
-AAProcess(input=file.path(system.file(package="agilp"),"input",""),output=file.path(system.file(package="agilp"),"output",""),s=9)
+AAProcess(input=file.path(system.file(package="agilp"),"input",""),output=file.path(system.file(package="agilp"),"output/",""),s=9)
 
 }
 
@@ -36,12 +36,12 @@ AAProcess(input=file.path(system.file(package="agilp"),"input",""),output=file.p
 #This examples extracts expression data from two sample array scanner files which are found in the folder "scanner" within the agilp package extdata folder
 #and places them in the folder output.
 inputdir<-file.path(system.file(package="agilp"),"extdata","scanner","", fsep = .Platform$file.sep)
-outputdir<-file.path(system.file(package="agilp"),"output", "", fsep = .Platform$file.sep)
+outputdir<-file.path(system.file(package="agilp"),"output/", "", fsep = .Platform$file.sep)
 AAProcess(input = inputdir, output = outputdir, s = 9)
 
 \dontrun{
 #to remove these files again and empty the output directory use 
-unlink(paste(file.path(system.file(package="agilp"),"output",""),"*.*",sep=""), recursive=FALSE)
+unlink(paste(file.path(system.file(package="agilp"),"output\\",""),"*.*",sep=""), recursive=FALSE)
 
 #The number of lines header to be skipped from scanner array files can be changed from the default value of 9 by setting variable s.
 AAProcess(input = inputdir, output = outputdir, s = 12)

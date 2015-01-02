@@ -35,9 +35,9 @@ Equaliser(input=file.path(system.file(package="agilp"),"input",""),output=file.p
 \examples{
 ##Takes four files of raw data (output of AAProcess, in folder agilp/dataset/raw) selects all entries common to all four, and outputs the shortened files to the folder agilp/output.
 
-inputdir<-file.path(system.file(package="agilp"),"extdata","raw","", fsep = .Platform$file.sep)
+inputdir<-file.path(system.file(package="agilp"),"extdata","raw/","", fsep = .Platform$file.sep)
 
-outputdir<-file.path(system.file(package="agilp"),"output", "", fsep = .Platform$file.sep)
+outputdir<-file.path(system.file(package="agilp"),"output/", "", fsep = .Platform$file.sep)
 
 Equaliser(input = inputdir, output = outputdir)
 

@@ -19,7 +19,8 @@ Baseline(NORM="LOG",allfiles="TRUE",r=2,A=2,B=3,input=file.path(system.file(pack
   \item{r}{The column of template which contains the file names}
   \item{A}{The first row of template to be used; note a header row is NOT ignored.}
   \item{B}{The last row of template to be used}
-  \item{allfiles}{If allfiles is TRUE, the script uses all files in the input directory, and template is ignored; if allfiles=FALSE,the scritp uses files defined by template
+  \item{allfiles}{If allfiles is TRUE, the script uses all files in the input directory, and template is ignored; if allfiles=FALSE,
+the scritp uses files defined by template
 }
 }
 \value{
@@ -42,7 +43,7 @@ Baseline(NORM="LOG",allfiles="TRUE",r=2,A=2,B=3,input=file.path(system.file(pack
 \examples{
 #Takes four files of raw data in folder agilp/extdata/raw, calculates the mean expression value for each probe, and saves as agilp/output/testbase.txt.
 
-inputdir<-file.path(system.file(package="agilp"),"extdata","raw","", fsep = .Platform$file.sep)
+inputdir<-file.path(system.file(package="agilp"),"extdata","raw/","", fsep = .Platform$file.sep)
 outputbase<-file.path(system.file(package="agilp"),"output", "testbase.txt", fsep = .Platform$file.sep)
 template<-file.path(system.file(package="agilp"),"extdata","sample_template.txt", fsep = .Platform$file.sep)
 Baseline(NORM="LOG",allfiles="TRUE",r=2,A=2,B=3,input=inputdir, baseout=outputbase, t = template)

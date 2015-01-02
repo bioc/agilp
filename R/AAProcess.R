@@ -1,4 +1,4 @@
-AAProcess<-function(input=file.path(system.file(package="agilp"),"input",""),output=file.path(system.file(package="agilp"),"output",""),s=9){
+AAProcess<-function(input=file.path(system.file(package="agilp"),"input",""),output=file.path(system.file(package="agilp"),"output/",""),s=9){
 
 #reads the input directory of file names into directory
 directory<-unlist(dir(input))[]

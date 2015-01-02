@@ -64,8 +64,8 @@ IDswop(input=file.path(system.file(package="agilp"),"input",""),output=file.path
 #This examples maps expression data from Agilent ProbeIDs (found in column one of input files) to corresponding EnsemblID. Each output file has the name of the original file with the suffix "_EnsemblID". If multiple probes map to teh same ID and vary by more than 20% they are discarded.
 
 
-inputdir<-file.path(system.file(package="agilp"),"extdata","raw","", fsep = .Platform$file.sep)
-outputdir<-file.path(system.file(package="agilp"),"output", "", fsep = .Platform$file.sep)
+inputdir<-file.path(system.file(package="agilp"),"extdata","raw/","", fsep = .Platform$file.sep)
+outputdir<-file.path(system.file(package="agilp"),"output/", "", fsep = .Platform$file.sep)
 annotation<-file.path(system.file(package="agilp"),"extdata","annotations_sample.txt", fsep = .Platform$file.sep)
 IDswop(input=inputdir,output=outputdir,annotation=annotation,source_ID="ProbeID",target_ID="EnsemblID", ERR=0.2)
 

@@ -30,8 +30,8 @@
 \references{In preparation}
 \examples{
 #This example makes a list of files in the folder agilp/extdata/raw and saves it in a file called names.txt (tab delimited) in the folder agilp/output.
-inputdir<-file.path(system.file(package="agilp"),"extdata","raw","", fsep = .Platform$file.sep)
-outputdir<-file.path(system.file(package="agilp"),"output", "", fsep = .Platform$file.sep)
+inputdir<-file.path(system.file(package="agilp"),"extdata","raw/","", fsep = .Platform$file.sep)
+outputdir<-file.path(system.file(package="agilp"),"output/", "", fsep = .Platform$file.sep)
 filenamex(input=inputdir,output=outputdir)
 
 \dontrun{
